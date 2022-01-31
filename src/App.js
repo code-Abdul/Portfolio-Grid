@@ -27,14 +27,14 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1>Portfolio Grid 4</h1>
+      <header className="App-header">
+        <h1 className="App-heading">Portfolio Grid 4</h1>
         <p>This grid shows the items pages in a popup</p>
       </header>
-      <Box>
-        <Grid container spacing={1}>
+      <Box className="App-grid">
+        <Grid container spacing={1.5}>
           {portfolioData?.memes?.map((meme, index) => (
-            <Grid item xs={6} sm={4} md={3} key={index}>
+            <Grid item xs={6} sm={4} md={3} lg={2} key={index}>
               <Card
                 sx={{ maxWidth: 345 }}
                 onMouseOver={() => setCardIndex(index)}
