@@ -38,6 +38,7 @@ function App() {
               <Card
                 sx={{ maxWidth: 345 }}
                 onMouseOver={() => setCardIndex(index)}
+                onMouseOut={() => setCardIndex(null)}
               >
                 {cardIndex !== index ? (
                   <CardActionArea>
